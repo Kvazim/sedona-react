@@ -7,16 +7,16 @@ const NavSite = () => {
 
     return (
         <ul className="disordered nav-site">
-                    <li className="nav-site-item">
-                      <NavLink className={setActive} to = "/">Главная</NavLink>
-                    </li>
-                    <li className="nav-site-item">
-                      <NavLink className={setActive} to = "/about">О Седоне</NavLink>
-                    </li>
-                    <li className="nav-site-item">
-                      <NavLink className={setActive} to = "/catalog">Гостиницы</NavLink>
-                    </li>
-                  </ul>
+            <li className="nav-site-item">
+                <NavLink className = {setActive} to = "/">Главная</NavLink>
+            </li>
+            <li className="nav-site-item">
+                <NavLink className = {setActive} to = "/about">О Седоне</NavLink>
+            </li>
+            <li className="nav-site-item">
+                <NavLink className = {setActive} to = "/catalog">Гостиницы</NavLink>
+            </li>
+        </ul>
     )
 }
 
