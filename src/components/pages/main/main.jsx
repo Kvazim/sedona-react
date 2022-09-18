@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
     return (
@@ -85,7 +86,7 @@ const Main = () => {
           <p><strong>Заинтересовались?</strong></p>
           <p className="search-block-subtitle">Укажите предполагаемые даты поездки, <br />и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <a className="btn" href="#">Поиск гостиницы в седоне</a>
+          <Link className="btn" to="#">Поиск гостиницы в седоне</Link>
         </section>
             </main>
             <footer>
@@ -126,7 +127,7 @@ const Main = () => {
               <a className="footer-social-link youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <svg className="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
+                  <g clipPath="url(#a)">
                     <path
                       d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
                       fill="#83B3D3" />

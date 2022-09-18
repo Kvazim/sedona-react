@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Catalog = () => {
 
@@ -16,7 +17,7 @@ const Catalog = () => {
                               </a>
                             </li>
                             <li className="breadcrumbs-item">
-                              <a className="breadcrumbs-link hotels" href="#">Гостиницы</a>
+                              <Link className="breadcrumbs-link hotels" to="#">Гостиницы</Link>
                             </li>
                           </ul>
                       </div>
@@ -124,29 +125,29 @@ const Catalog = () => {
                         </div>
                         <button className="visually-hidden" type="submit" tabIndex="-1">Отсортировать продукты</button>
                       </form>
-                      <a href="#" className="btn button-light mode-tile">
+                      <Link to="#" className="btn button-light mode-tile">
                         <span className="visually-hidden">Показать карточки</span>
-                      </a>
-                      <a href="#" className="btn button-light mode-slideshow">
+                      </Link>
+                      <Link to="#" className="btn button-light mode-slideshow">
                         <span className="visually-hidden">Показать слайды</span>
-                      </a>
-                      <a href="#" className="btn button-light mode-list button-light-activ">
+                      </Link>
+                      <Link to="#" className="btn button-light mode-list button-light-activ">
                         <span className="visually-hidden">Показать список</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="product-wrapper">
                       <ul className="disordered product-list">
                         <li className="product-card">
-                          <a className="product-card-link-img" href="#">
+                          <Link className="product-card-link-img" to="#">
                             <img src="./images/hotel-1.jpg" alt="футуристическая гостиница на склоне горы." width="180" height="120" />
-                          </a>
+                          </Link>
                           <div className="product-card-description">
-                            <a className="product-card-link" href="#">
+                            <Link className="product-card-link" to="#">
                               <h3 className="product-card-title heading">Amara Resort Spa</h3>
-                            </a>
+                            </Link>
                             <p className="product-card-tipe">Гостиница</p>
                             <b className="product-card-price">От 4000 ₽</b>
-                            <a className="btn btn-details" href="#">подробнее</a>
+                            <Link className="btn btn-details" to="#">подробнее</Link>
                             <button className="button button-catalog button-favorites">В избранное</button>
                           </div>
                 <div className="rating-description">
@@ -171,17 +172,17 @@ const Catalog = () => {
                 </div>
               </li>
               <li className="product-card">
-                <a className="product-card-link-img" href="#">
+                <Link className="product-card-link-img" to="#">
                   <img src="./images/hotel-2.jpg" alt="однаэтажная гостиница с видом на две горы." width="180"
                     height="120" />
-                </a>
+                </Link>
                 <div className="product-card-description">
-                  <a className="product-card-link" href="#">
+                  <Link className="product-card-link" to="#">
                     <h3 className="product-card-title heading">Desert Quail Inn</h3>
-                  </a>
+                  </Link>
                   <p className="product-card-tipe">Мотель</p>
                   <b className="product-card-price">От 3000 ₽</b>
-                  <a className="btn btn-details" href="#">подробнее</a>
+                  <Link className="btn btn-details" to="#">подробнее</Link>
                   <button className="button button-catalog button-favorites">В избранное</button>
                 </div>
                 <div className="rating-description">
@@ -206,16 +207,16 @@ const Catalog = () => {
                 </div>
               </li>
               <li className="product-card">
-                <a className="product-card-link-img" href="#">
+                <Link className="product-card-link-img" to="#">
                   <img src="./images/hotel-3.jpg" alt="Гора дьявола." width="180" height="120" />
-                </a>
+                </Link>
                 <div className="product-card-description">
-                  <a className="product-card-link" href="#">
+                  <Link className="product-card-link" to="#">
                     <h3 className="product-card-title heading">Villas at Poco Diablo</h3>
-                  </a>
+                  </Link>
                   <p className="product-card-tipe">Апартаменты</p>
                   <b className="product-card-price">От 2000 ₽</b>
-                  <a className="btn btn-details" href="#">подробнее</a>
+                  <Link className="btn btn-details" to="#">подробнее</Link>
                   <button className="button button-catalog button-favorites-added">В избранном</button>
                 </div>
                 <div className="rating-description">
@@ -240,16 +241,16 @@ const Catalog = () => {
                 </div>
               </li>
               <li className="product-card">
-                <a className="product-card-link-img" href="#">
+                <Link className="product-card-link-img" to="#">
                   <img src="./images/hotel-4.jpg" alt="Дорога среди леса в горах." width="180" height="120" />
-                </a>
+                </Link>
                 <div className="product-card-description">
-                  <a className="product-card-link" href="#">
+                  <Link className="product-card-link" to="#">
                     <h3 className="product-card-title heading">GreenTree Inn</h3>
-                  </a>
+                  </Link>
                   <p className="product-card-tipe">Гостиница</p>
                   <b className="product-card-price">От 3000 ₽</b>
-                  <a className="btn btn-details" href="#">подробнее</a>
+                  <Link className="btn btn-details" to="#">подробнее</Link>
                   <button className="button button-catalog button-favorites">В избранное</button>
                 </div>
                 <div className="rating-description">
@@ -281,22 +282,22 @@ const Catalog = () => {
           <div className="pagination-wrapper">
             <ol className="pagination ordered">
               <li className="pagination-item">
-                <a className="pagination-link pagination-link-active" href="#">1</a>
+                <Link className="pagination-link pagination-link-active" to="#">1</Link>
               </li>
               <li className="pagination-item">
-                <a className="pagination-link" href="#">2</a>
+                <Link className="pagination-link" to="#">2</Link>
               </li>
               <li className="pagination-item">
-                <a className="pagination-link" href="#">3</a>
+                <Link className="pagination-link" to="#">3</Link>
               </li>
               <li className="pagination-item">
-                <a className="pagination-link" href="#">4</a>
+                <Link className="pagination-link" to="#">4</Link>
               </li>
               <li className="pagination-item">
-                <a className="pagination-link" href="#">...</a>
+                <Link className="pagination-link" to="#">...</Link>
               </li>
               <li className="pagination-item">
-                <a className="pagination-link" href="#">10</a>
+                <Link className="pagination-link" to="#">10</Link>
               </li>
             </ol>
             <form className="search-title-footer">
@@ -350,7 +351,7 @@ const Catalog = () => {
             <a className="footer-social-link youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <svg className="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)">
+                <g clipPath="url(#a)">
                   <path
                     d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
                     fill="#83B3D3" />
