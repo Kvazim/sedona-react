@@ -30,14 +30,14 @@ const Catalog = () => {
                               <ul className="disordered catalog-filter-item">
                                 <li>
                                   <label className="control">
-                                    <input className="visually-hidden control-input" type="checkbox" name="pool" checked />
+                                    <input className="visually-hidden control-input" type="checkbox" name="pool" defaultChecked />
                                       <span className="control-mark"></span>
                                       <span className="control-label">Бассейн</span>
                                   </label>
                                 </li>
                                 <li>
                                   <label className="control">
-                                    <input className="visually-hidden control-input" type="checkbox" name="parking" checked />
+                                    <input className="visually-hidden control-input" type="checkbox" name="parking" defaultChecked />
                                     <span className="control-mark"></span>
                                     <span className="control-label">Парковка</span>
                                   </label>
@@ -56,7 +56,7 @@ const Catalog = () => {
                               <ul className="disordered catalog-filter-item">
                                 <li>
                                   <label className="control">
-                                    <input className="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked />
+                                    <input className="visually-hidden control-input" type="radio" name="product-group" value="hotel" defaultChecked />
                                     <span className="control-mark"></span>
                                     <span className="control-label">Гостиница</span>
                                   </label>
@@ -89,7 +89,7 @@ const Catalog = () => {
                                 </label>
                               </div>
                               <div className="range-scale">
-                                <div className="range-bar" style="left: 0; width: 236px;">
+                                <div className="range-bar" style={{left: 0, width: 236}}>
                                   <button className="range-toggle toggle-min" type="button">
                                     <span className="visually-hidden">Изменить минимальную цену.</span>
                                   </button>
@@ -115,14 +115,14 @@ const Catalog = () => {
                       <p><strong>Найдено гостиниц: <span>38</span></strong></p>
                       <form className="search-title-header">
                         <div className="select">
-                          <label className="visually-hidden" for="sorting">Сортировка</label>
+                          <label className="visually-hidden" htmlFor="sorting">Сортировка</label>
                           <select className="select-control" id="sorting" name="sorting">
                             <option value="popular">Сначала дешёвые</option>
                             <option value="cheap">Сначала популярное</option>
                             <option value="expensive">Сначала дорогое</option>
                           </select>
                         </div>
-                        <button className="visually-hidden" type="submit" tabindex="-1">Отсортировать продукты</button>
+                        <button className="visually-hidden" type="submit" tabIndex="-1">Отсортировать продукты</button>
                       </form>
                       <a href="#" className="btn button-light mode-tile">
                         <span className="visually-hidden">Показать карточки</span>
@@ -164,7 +164,7 @@ const Catalog = () => {
                       <p className="stars-4 activ"><span className="visually-hidden"> звезды</span></p>
                     </li>
                     <li>
-                      <p class="stars-5 disable"><span className="visually-hidden">5 </span></p>
+                      <p className="stars-5 disable"><span className="visually-hidden">5 </span></p>
                     </li>
                   </ul>
                   <p className="rating">Рейтинг: <span>8,5</span></p>
@@ -300,13 +300,13 @@ const Catalog = () => {
               </li>
             </ol>
             <form className="search-title-footer">
-              <label className="page-quantity" for="quantity">Гостиниц на странице:</label>
+              <label className="page-quantity" htmlFor="quantity">Гостиниц на странице:</label>
               <select className="select-control" id="quantity" name="quantity">
                 <option value="popular">4</option>
                 <option value="cheap">8</option>
                 <option value="expensive">Все</option>
               </select>
-              <button className="visually-hidden" type="submit" tabindex="-1">Отсортировать продукты</button>
+              <button className="visually-hidden" type="submit" tabIndex="-1">Отсортировать продукты</button>
             </form>
           </div>
         </div>
@@ -318,7 +318,7 @@ const Catalog = () => {
               <p className="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form className="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p className="e-mail">
-                  <label for="e-mail" className="visually-hidden">Укажите Ваш e-mail адресс</label>
+                  <label htmlFor="e-mail" className="visually-hidden">Укажите Ваш e-mail адресс</label>
                   <input type="email" className="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required />
                 </p>
                 <button className="button" type="submit">Подписаться</button>

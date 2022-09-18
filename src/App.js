@@ -10,10 +10,10 @@ function App() {
   return (
       <div className = 'container'>
           <Routes>
-            <Route path='/' element = { <Navigation /> }>
+            <Route path="/" element = { <Navigation /> }>
               <Route index element = { <Main /> } />
-              <Route path='catalog' element = { <Catalog /> } />
-              <Route path='*' element = { <NotFoundPage /> } />
+              <Route path="catalog" element = { <Catalog /> } />
+              <Route path="*" element = { <NotFoundPage /> } />
             </Route>
           </Routes>
       </div>

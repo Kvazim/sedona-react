@@ -94,7 +94,7 @@ const Main = () => {
           <p className="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form className="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <p className="e-mail">
-              <label for="e-mail" className="visually-hidden">Укажите Ваш e-mail адресс</label>
+              <label htmlFor="e-mail" className="visually-hidden">Укажите Ваш e-mail адресс</label>
               <input type="email" className="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required />
             </p>
             <button className="button" type="submit">Подписаться</button>
