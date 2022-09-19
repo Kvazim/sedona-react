@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Modal } from '../../layout/modal/modal';
 
 const Main = () => {
-    return (
-        <>
-            <main className='main-index'>
+  return (
+    <>
+      <main className='main-index'>
         <section className="promo">
           <div className="promo-banner">
             <h1 className="visually-hidden">Седона, поиск гостиниц</h1>
@@ -88,8 +89,8 @@ const Main = () => {
             гостиниц в Седоне</p>
           <Link className="btn" to="#">Поиск гостиницы в седоне</Link>
         </section>
-            </main>
-            <footer>
+      </main>
+      <footer>
         <section className="subscription-form">
           <h2 className="subscription-title">Подпишитесь на рассылку</h2>
           <p className="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -152,9 +153,10 @@ const Main = () => {
             </svg>
           </a>
         </section>
-            </footer>
-        </>
-    )
+      </footer>
+      <Modal />
+    </>
+  )
 }
 
 export { Main };

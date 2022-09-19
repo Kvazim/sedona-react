@@ -267,7 +267,7 @@ body {
   position: absolute;
   top: 41px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0);
   box-sizing: border-box;
   width: 400px;
   background-color: #ffffff;
@@ -275,6 +275,7 @@ body {
   z-index: 1;
   border: 1px solid #e5e5e5;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  transition: 1s;
 }
 
 .popup::before {
@@ -291,6 +292,7 @@ body {
 
 .popup-activ {
   display: block;
+  transform: translateX(-50%) scale(1);
 }
 
 .popup-content {
